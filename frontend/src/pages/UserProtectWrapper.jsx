@@ -9,6 +9,7 @@ const UserProtectWrapper = ({ children }) => {
     if (!token) {
       navigate('/login');
     }
+
   }, [token, navigate]); // Add dependencies
 
   // Render children only if the token exists
